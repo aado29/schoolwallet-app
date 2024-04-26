@@ -1,10 +1,11 @@
-import { Button } from "@/components/ui/button";
+import { ThemeProvider } from "@/contexts/theme";
+import { RouterProvider } from "@/contexts/routes";
 
 function App() {
   return (
-    <div>
-      <Button>Click me! hol</Button>
-    </div>
+    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+      <RouterProvider />
+    </ThemeProvider>
   );
 }
 

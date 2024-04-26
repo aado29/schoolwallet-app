@@ -5,8 +5,9 @@ import "./index.css";
 
 const el = document.getElementById("root");
 
-el && ReactDOM.createRoot(el).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+el &&
+  ReactDOM.createRoot(el).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
